@@ -1,0 +1,23 @@
+
+import { UserButton } from '@clerk/nextjs'
+import React from 'react'
+import Addinterview from './_components/Addinterview'
+import InterviewList from './_components/InterviewList'
+
+function dashboard() {
+  return (
+    <div className='p-10'>
+      <h2 className='font-bold text-2xl'>Dashboard</h2>
+      <h2 className='text-gray-500'> Creat and start you AI Mock Interview</h2>
+      <div className='grid grid-cols-1 md:grid-cols-3 my-5'>
+        <Addinterview />
+      </div>
+      {/* Previous Interview List */}
+      <div>
+        <InterviewList/>
+      </div>
+    </div>
+  )
+}
+
+export default dashboard
