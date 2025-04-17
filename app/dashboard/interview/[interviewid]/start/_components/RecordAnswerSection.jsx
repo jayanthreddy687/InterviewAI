@@ -32,7 +32,7 @@ function RecordAnswerSection({ mockInterviewQues, activeQuestionIndex, interview
 
     useEffect(() => {
         results.map((result) => (
-            setUserAnswer(prevAns => prevAns + result?.transcript)
+            setUserAnswer(prevAns => prevAns + result?.transcript || '')
         ))
     }, [results])
 
